@@ -148,7 +148,7 @@
     <div class="container-fluid p-0">
       <div class="row no-gutters">
         <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/thumbnails/190506_beanbrigade_1920x640.jpg">
+          <a class="portfolio-box" data-toggle="modal" href="#modal2">
             <img class="img-fluid" src="img/portfolio/thumbnails/190506_beanbrigade_1920x640.jpg" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
@@ -161,20 +161,20 @@
           </a>
         </div>
         <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/thumbnails/euler.png">
-            <img class="img-fluid" src="img/portfolio/thumbnails/euler.png" alt="">
+          <a class="portfolio-box" data-toggle="modal" href="#modal2">
+            <img class="img-fluid" src="img/portfolio/thumbnails/RETIRE-stockchart-032918-shutter.jpg" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
-                Programming/Math Challenges
+                Personal Finance
               </div>
               <div class="project-name">
-                Project Euler Solutions
+                Stock Pricing Webcrawler and Time Series Analysis
               </div>
             </div>
           </a>
         </div>
         <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/thumbnails/carcassonne-new-edition_1.jpg">
+          <a class="portfolio-box" data-toggle="modal" href="#modal2">
             <img class="img-fluid" src="img/portfolio/thumbnails/carcassonne-new-edition_1.jpg" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
@@ -229,6 +229,8 @@
     </div>
   </section>
 
+
+
   <!-- Call to Action Section -->
   <!--<section class="page-section bg-dark text-white">-->
     <!--<div class="container text-center">-->
@@ -261,6 +263,34 @@
     </div>
   </section>
 
+  <!-- Modals -->
+  <div class="portfolio-modal modal fade" id="modal2" tabindex="-1" role="dialog" aria-hidden=true>
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <h3 class="text-uppercase text-black font-weight-bold">Stock Pricing</h3>
+              <h4 class="text-black font-weight-bold">Status: Completed</h4>
+              <br>
+              <p class="text-muted">Webcrawler for personal stock tracking</p>
+              <p><a class="link" href="https://github.com/JayRayPang/StockPricing">View on GitHub</a></p>
+              <p class="text-black">Lorem ipsum lalalala</p>
+
+              <ul class="list-inline">
+                <li>Category: Personal Finance</li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Footer -->
   <!--<footer class="bg-light py-5">-->
     <!--<div class="container">-->
@@ -277,7 +307,7 @@
   <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="js/creative.min.js"></script>
+  <script src="js/creative.js"></script>
 
 </body>
 
