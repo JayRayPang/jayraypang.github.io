@@ -294,13 +294,17 @@
                 statistical game like this:<br><br>
 
                 We are playing game with 25 levels. In MapleStory, the first ten levels are mostly trivial, so for convenience's sake, we'll have you start at level 10.
-                The objective is to increase your levels as much as possible. At each level $i$, we can attempt to go up to level $i+1$ by paying $c_i$ money with a probability of success $s_i$. <br><br>
+                The objective is to increase your levels as much as possible.<br><br>
 
-                You have a probability of failing $f_i$ (note this is not necessarily $1-s_i$), in this case, you go down a level to level $i-1$, except when at levels 10, 15, and 20, in in which case you stay at level 10, 15, or 20 respectively. In addition, if you drop two levels in a row, your success rate for the next attempt becomes 100%. <br><br>
+                When attempting to go up a level, there are three possible outcomes: success, fail, or destroy. It costs $c_i$ money to attempt to go up a level. <br><br>
 
-                Starting from the level 12$\rightarrow$13 enhancement, you also have the chance to lose your progress, and reset back to level 12. We denote this probability as $d_i$. For example, when attempting to go from level 15$\rightarrow$16 or level 21$\rightarrow$22, we have a $d_{15}$ and $d_{21}$ chance of instantly dropping back down to level 12. However, starting from the level 12$\rightarrow$13 enhancement and up to the level 16$\rightarrow$17 enhancement, you can also choose to pay $2c_i$ in order to remove this chance. Instead, your success rate will remain $s_i$  and your failure rate will be $1-s_i$ instead of $f_i$.<br><br>
+                In the success case, you advance one level forward, up to level $i+1$. Your probability of success is $s_i$.<br><br>
 
-                The goal of this calculator is to provide an expected cost of going from one level $a$ to another level $b$ such that $b>a$. <br>
+                In the fail case, you drop a level, down to level $i-1$, except when attempting 10$\rightarrow$11, 15$\rightarrow$16, and 20$\rightarrow$21, in which case you will stay at level 10, 15, or 20, respectively. These levels can be considerd checkpoints, since, except in the destroy case, you can never drop below them once you have reached them. Your probability of failing is $f_i$ (note this is not necessarily $1-s_i$). In addition, if you drop two levels in a row, your success rate for the next attempt becomes 100%. <br><br>
+
+                Starting from the level 12$\rightarrow$13 enhancement, you also have the chance to lose your progress, and reset back to level 12. This is the destroy case. We denote this probability as $d_i$. For example, when attempting to go from level 15$\rightarrow$16 or level 21$\rightarrow$22, we have a $d_{15}$ and $d_{21}$ chance of instantly dropping back down to level 12. However, starting from the level 12$\rightarrow$13 enhancement and up to the level 16$\rightarrow$17 enhancement, you can also choose to pay $2c_i$ in order to remove this chance. Instead, your success rate will remain $s_i$  and your failure rate will be $1-s_i$ instead of $f_i$.<br><br>
+
+                The goal of this calculator is to provide an expected cost of going from one level $a$ to another level $b$ such that $b>a$.
               </p>
 
               <ul class="list-inline">
