@@ -10,6 +10,13 @@
 
   <title>Jerry Peng</title>
 
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+
   <!-- Logo -->
   <link rel="shortcut icon" href="img/favicon.ico">
 
@@ -148,11 +155,11 @@
     <div class="container-fluid p-0">
       <div class="row no-gutters">
         <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" data-toggle="modal" href="#modal2">
+          <a class="portfolio-box" data-toggle="modal" href="#modal1">
             <img class="img-fluid" src="img/portfolio/thumbnails/190506_beanbrigade_1920x640.jpg" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
-                Software Development
+                Stochastic Modeling/WebApp Development
               </div>
               <div class="project-name">
                 MapleStory Starforcing Calculator
@@ -264,6 +271,49 @@
   </section>
 
   <!-- Modals -->
+  <div class="portfolio-modal modal fade" id="modal1" tabindex="-1" role="dialog" aria-hidden=true>
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <h3 class="text-uppercase text-black font-weight-bold">MapleStory Starforcing Calculator</h3>
+              <h4 class="text-black font-weight-bold">Status: In-Progress</h4>
+              <br>
+              <p class="text-muted">WebApp for calculating enhancements costs in MapleStory</p>
+              <p><a class="link" href="https://starforce.appspot.com/" target="_blank">Try it out!</a></p>
+              <p><a class="link" href="https://github.com/JayRayPang/starforcing" target="_blank">View on GitHub</a></p>
+              <h4 class="text-black font-weight-bold">Background</h4>
+              <p>
+                Starforcing is the enhancement system for equipment in MapleStory. If you are unfamiliar with MapleStory you can think of starforcing as a
+                statistical game like this:<br><br>
+
+                We are playing game with 25 levels. In MapleStory, the first ten levels are mostly trivial, so for convenience's sake, we'll have you start at level 10.
+                The objective is to increase your levels as much as possible. At each level $i$, we can attempt to go up to level $i+1$ by paying $c_i$ money with a probability of success $s_i$. <br><br>
+
+                You have a probability of failing $f_i$ (note this is not necessarily $1-s_i$), in this case, you go down a level to level $i-1$, except when at levels 10, 15, and 20, in in which case you stay at level 10, 15, or 20 respectively. In addition, if you drop two levels in a row, your success rate for the next attempt becomes 100%. <br><br>
+
+                Starting from the level 12$\rightarrow$13 enhancement, you also have the chance to lose your progress, and reset back to level 12. We denote this probability as $d_i$. For example, when attempting to go from level 15$\rightarrow$16 or level 21$\rightarrow$22, we have a $d_{15}$ and $d_{21}$ chance of instantly dropping back down to level 12. However, starting from the level 12$\rightarrow$13 enhancement and up to the level 16$\rightarrow$17 enhancement, you can also choose to pay $2c_i$ in order to remove this chance. Instead, your success rate will remain $s_i$  and your failure rate will be $1-s_i$ instead of $f_i$.<br><br>
+
+                The goal of this calculator is to provide an expected cost of going from one level $a$ to another level $b$ such that $b>a$. <br>
+              </p>
+
+              <ul class="list-inline">
+                <li class="text-black font-weight-bold">Category: Stochastic Modeling/WebApp Development</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <div class="portfolio-modal modal fade" id="modal2" tabindex="-1" role="dialog" aria-hidden=true>
     <div class="modal-dialog">
       <div class="modal-content">
@@ -279,12 +329,13 @@
               <h4 class="text-black font-weight-bold">Status: Completed</h4>
               <br>
               <p class="text-muted">Webcrawler for personal stock tracking</p>
-              <p><a class="link" href="https://github.com/JayRayPang/StockPricing">View on GitHub</a></p>
-              <p class="text-black">Lorem ipsum lalalala</p>
+              <p><a class="link" href="https://github.com/JayRayPang/StockPricing" target="_blank">View on GitHub</a></p>
+              <p class="text-black"></p>
 
               <ul class="list-inline">
-                <li>Category: Personal Finance</li>
+                <li class="text-black font-weight-bold">Category: Personal Finance</li>
               </ul>
+            </div>
           </div>
         </div>
       </div>
