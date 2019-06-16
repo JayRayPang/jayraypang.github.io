@@ -71,7 +71,6 @@
     <div class="container h-100">
       <div class="row h-100 align-items-center justify-content-center text-center">
         <div class="col-lg-10 align-self-end">
-          <!--<img src="img/portfolio/logo_text.svg" height="250" width="250">-->
           <h1 class="text-uppercase text-black font-weight-bold">Jerry Peng</h1>
           <hr class="divider my-4">
         </div>
@@ -120,11 +119,11 @@
           </a>
         </div>
         <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" data-toggle="modal" href="#modal2">
+          <a class="portfolio-box" data-toggle="modal" href="#modal3">
             <img class="img-fluid" src="img/portfolio/thumbnails/carcassonne-new-edition_1.jpg" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
-                Software Development
+                Object-Oriented Design
               </div>
               <div class="project-name">
                 Carcassonne
@@ -153,8 +152,7 @@
         </div>
         <div class="col-lg-4 mr-auto text-center">
           <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
-          <!-- Make sure to change the email address in anchor text AND the link below! -->
-          <a class="d-block" href="mailto:contact@yourwebsite.com">jerrypeng6797@gmail.com</a>
+          <a class="d-block" href="mailto:jerrypeng6797@gmail.com">jerrypeng6797@gmail.com</a>
         </div>
       </div>
     </div>
@@ -173,10 +171,10 @@
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <h3 class="text-uppercase text-black font-weight-bold">MapleStory Starforcing Calculator</h3>
-              <h4 class="text-black font-weight-bold">Status: In-Progress</h4>
+              <h4 class="text-black font-weight-bold">Status: Completed</h4>
               <br>
               <p class="text-muted">WebApp for calculating enhancements costs in MapleStory</p>
-              <p><a class="link" href="https://starforce.appspot.com/" target="_blank">Try it out!</a></p>
+              <p></p><a class="link" href="https://starforce.appspot.com/" target="_blank">Try it out!</a></p>
               <p><a class="link" href="https://github.com/JayRayPang/starforcing" target="_blank">View on GitHub</a></p>
               <h4 class="text-black font-weight-bold">Background</h4>
               <p>
@@ -224,10 +222,59 @@
               <br>
               <p class="text-muted">Webcrawler for personal stock tracking</p>
               <p><a class="link" href="https://github.com/JayRayPang/StockPricing" target="_blank">View on GitHub</a></p>
-              <p class="text-black"></p>
-
+              <h4 class="text-black font-weight-bold">Background</h4>
+              <p class="text-black">This is an app using a Python bot to scrape pricing data for hundreds of stocks from CNBC on daily basis. 
+                On Linux systems, I use cron to schedule this task, on Windows sytem, I use a batch file and task scheduler to do this. Scraped data is automatically pushed into
+                a Microsoft Excel workbook, which backs information up into an Access database. Excel's visualization tools are used to compare YTD% of returns
+                for selected symbols across the time series. <br><br>
+              </p>
+              <img src="img/stock-symbol-performance.png" alt="stock performance" width=95%>
               <ul class="list-inline">
                 <li class="text-black font-weight-bold">Category: Personal Finance</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio-modal modal fade" id="modal3" tabindex="-1" role="dialog" aria-hidden=true>
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <h3 class="text-uppercase text-black font-weight-bold">Carcassonne</h3>
+              <h4 class="text-black font-weight-bold">Status: Completed</h4>
+              <br>
+              <p class="text-muted">Java implementation of Carcassonne Board Game</p>
+              <h4 class="text-black font-weight-bold">Background</h4>
+              <p>
+                Carcassonne is a tile-based board game for two to five players where the goal is to claim regions of
+                adjacent tiles. You can read the <a href="http://www.riograndegames.com/getFile.php?id=670">official rules here</a>. (This will download a pdf).
+              </p>
+              <h4 class="text-black font-weight-bold">Tech Stack</h4>
+              <p>
+                I created the game in Java. Caracassonne tiles were configured in YAML files. The GUI was made using Swing. I used Gradle as my build system and Travis CI for continuous integration.
+                The board is represented as a graph, and followers are tallied using depth-first search.
+              </p>
+              <h4 class="text-black font-weight-bold">The Game</h4>
+              <img src="img/carcassonne.PNG" alt="Carcassonne" width=70%><br>
+              One the left side of the UI, we have general game information. The top corner has the current tile in hand ready to be played. Underneath that, we see two
+              arrows which allow us to rotate the tile 90&#176; in either direction. Beneath that, we can select where on the tile we would like to place our follower.
+              Our selection will be reflected on the tile by a colored dot corresponding to the current player, in this case, yellow. Beneath that, we have the scoreboard.
+              The scoreboard tells us who the current player is, what their score is, and how many followers they have left to place.<br><br>
+              To the right, and taking up the vast majority of space, we have the board. Click on any non-empty space to attempt to place a tile. If it is a legal move with
+              the current tile's rotation, then the tile will be placed.
+              <br><br>
+              <ul class="list-inline">
+                <li class="text-black font-weight-bold">Category: Object-Oriented Design/Software Development</li>
               </ul>
             </div>
           </div>
