@@ -108,13 +108,13 @@
         </div>
         <div class="col-lg-4 col-sm-6">
           <a class="portfolio-box" data-toggle="modal" href="#modal2">
-            <img class="img-fluid" src="img/portfolio/thumbnails/RETIRE-stockchart-032918-shutter.jpg" alt="">
+            <img class="img-fluid" src="img/portfolio/thumbnails/gameOfLifeBig.gif" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
-                Personal Finance
+                C++ Graphics and Game
               </div>
               <div class="project-name">
-                Stock Pricing Webcrawler and Time Series Analysis
+                Conway's Game of Life
               </div>
             </div>
           </a>
@@ -218,20 +218,22 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-10 mx-auto">
-              <h3 class="text-uppercase text-black font-weight-bold">Stock Pricing</h3>
+              <h3 class="text-uppercase text-black font-weight-bold">Conway's Game of Life</h3>
               <h4 class="text-black font-weight-bold">Status: Completed</h4>
               <br>
-              <p class="text-muted">Webcrawler for personal stock tracking</p>
-              <p><a class="link" href="https://github.com/JayRayPang/StockPricing" target="_blank">View on GitHub</a></p>
+              <p class="text-muted">C++ Implementation of Conway's Game of Life Using the SDL Library</p>
+              <p><a class="link" href="https://github.com/JayRayPang/ConwayGameOfLifeCpp" target="_blank">View on GitHub</a></p>
               <h4 class="text-black font-weight-bold">Background</h4>
-              <p class="text-black">This is an app using a Python bot to scrape pricing data for hundreds of stocks from CNBC on daily basis. 
-                On Linux systems, I use cron to schedule this task, on Windows sytem, I use a batch file and task scheduler to do this. Scraped data is automatically pushed into
-                a Microsoft Excel workbook, which backs information up into an Access database. Excel's visualization tools are used to compare YTD% of returns
-                for selected symbols across the time series. <br><br>
+              <p class="text-black"> I created this app mostly because I wanted to learn C++ and how to make games in it. I used the SDL Library for graphics. 
+                I had felt pretty strong about my skills in C before, and I really liked the syntax in C, but felt it was annoying sometimes to deal with manual memory management. 
+                I heard that C++ code is generally more highly abstracted than C so I wanted to give it a try creating a simple 0-person game in Conway's Game of Life. This was a small project with
+                less than 300 lines of code, but I learned a lot about game design for more complex games in the process as well. I really liked C++
+                so far and I'll probably be trying to make some other games with the SDL library in the near future as well. <br>
               </p>
-              <img src="img/stock-symbol-performance.png" alt="stock performance" width=95%>
+              Here's a little demo of my implementation: <br><br>
+              <img src="img/gameOfLife.gif" alt="gameOfLife">
               <ul class="list-inline">
-                <li class="text-black font-weight-bold">Category: Personal Finance</li>
+                <li class="text-black font-weight-bold">Category: C++ Graphics and Game</li>
               </ul>
             </div>
           </div>
