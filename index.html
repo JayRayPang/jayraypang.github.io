@@ -108,13 +108,13 @@
         </div>
         <div class="col-lg-4 col-sm-6">
           <a class="portfolio-box" data-toggle="modal" href="#modal2">
-            <img class="img-fluid" src="img/portfolio/thumbnails/pixel.png" alt="">
+            <img class="img-fluid" src="img/portfolio/thumbnails/donkpoker.png" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
-                Mobile App Development
+                  Rust
               </div>
               <div class="project-name">
-                Food Court
+                  Donk Poker
               </div>
             </div>
           </a>
@@ -218,17 +218,25 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-10 mx-auto">
-              <h3 class="text-uppercase text-black font-weight-bold">Conway's Game of Life</h3>
+              <h3 class="text-uppercase text-black font-weight-bold">Donk Poker</h3>
               <h4 class="text-black font-weight-bold">Status: In-Progress</h4>
               <br>
-              <p class="text-muted">Food Court</p>
+              <p class="text-muted">Donk Poker</p>
               <h4 class="text-black font-weight-bold">Background</h4>
-              <p class="text-black"> Android and iOS app about helping friends who can't decide where to eat. Used a NodeJS server backend with Socket.io<br>
+              <p class="text-black">
+                This is an implementation of 10-max No-Limit Hold'Ems. Poker is one of my biggest hobbies, and I'm an avid online cash game player on PokerStars, which has
+                recently become legal in Pennsylvania. 
               </p>
-              Here's a look into what it looks like so far: <br><br>
-              <img src="img/portfolio/thumbnails/pixel.png" alt="FoodCourt">
+              <h4 class="text-black font-weight-bold">My Experience</h4>
+              <p class="text-black">
+                A poker web-based multiplayer game without any Javascript; the entire client and server are both Written in Rust and compiled to WebAssembly.
+                The client and server communicate using WebSockets, and use an NGINX proxy. The server is written in async Rust, using the Tokio library. For me,
+                I found this relatively challenging as the async ecosystem is still relatively new at this time (2020 Coronavirus times) and choosing between available
+                async runtimes (Tokio, async-std, smol) was a headache. Ultimately I went with Tokio because that was the one I found the most documentation on in quick Google
+                searches. The client is pretty boring direct interactions with the DOM using the web-sys crate.
+              </p>
               <ul class="list-inline">
-                <li class="text-black font-weight-bold">Category: Client-Server, Android, iOS, Design</li>
+                <li class="text-black font-weight-bold">Category: WebSockets, Rust</li>
               </ul>
             </div>
           </div>
